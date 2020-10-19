@@ -17,12 +17,12 @@
 	その場合、不具合の原因を見つけるのに時間がかかってしまうので、このオプションはつけておくべき*/
     
     /*CREATE文を使用してテーブルを作成 
-    イメージとしては、情報を格納する「箱」を作成する感じ*/
+    イメージとしては、データを格納する「箱」を作成する感じ*/
     $sql = "CREATE TABLE IF NOT EXISTS public_html"
     ." ("
     //numは、INT AUTO_INCREMENT PRIMARY KEY を使うことで自動的に番号が割り当てられる
     . "num INT AUTO_INCREMENT PRIMARY KEY,"
-    //（）内に記されている数値はDBに登録できる上限文字数
+    //（）内に記されている数値はデータベースに登録できる上限文字数
     . "name char(32),"
     . "comment TEXT,"
     . "date char(32),"
@@ -149,7 +149,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>mission_5</title>
+        <title>ひとこと掲示板</title>
     </head>
     <body>
         <h1>ひとこと掲示板</h1>
